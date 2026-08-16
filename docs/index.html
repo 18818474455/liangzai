@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>云享传靓仔 · 活动摄影修图美颜软件</title>
+  <meta name="description" content="本机出片，像素不上云。AI 起稿，Photoshop 全参数可改。婚礼 / 活动 / 证件照桌面精修。">
+  <link rel="icon" href="./brand/pc-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050607;
+      --bg-2: #0d1017;
+      --ink: #dbe2e6;
+      --ink-dim: #8b969e;
+      --paper: #ffffff;
+      --accent: #3dd6a5;
+      --line: rgba(219, 226, 230, 0.12);
+      --pad: clamp(20px, 4vw, 56px);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Noto Sans SC", sans-serif; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1120px, calc(100% - var(--pad) * 2)); margin: 0 auto; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px var(--pad); border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 4;
+      background: color-mix(in srgb, var(--bg) 86%, transparent);
+      backdrop-filter: blur(16px);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--paper); text-decoration: none; }
+    .brand img { height: 28px; width: auto; }
+    .brand b { font-size: 14px; letter-spacing: 0.04em; }
+    nav { display: flex; gap: 18px; font-size: 13px; color: var(--ink-dim); }
+    nav a { color: inherit; }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 42px; padding: 0 18px; border-radius: 999px;
+      background: var(--accent); color: #06241b; font-weight: 700; font-size: 13px;
+    }
+    .cta:hover { text-decoration: none; filter: brightness(1.06); }
+    .cta-ghost {
+      background: transparent; color: var(--paper);
+      border: 1px solid var(--line);
+    }
+    .hero { padding: 72px 0 36px; }
+    .kicker { color: var(--accent); font-size: 12px; letter-spacing: 0.18em; font-weight: 700; }
+    h1 {
+      margin: 14px 0 0; font-size: clamp(36px, 6vw, 68px); line-height: 1.08;
+      color: var(--paper); font-weight: 900; letter-spacing: -0.03em; text-wrap: pretty;
+    }
+    .lead { max-width: 38rem; margin-top: 18px; font-size: 18px; line-height: 1.7; color: var(--ink-dim); text-wrap: pretty; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .proof {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      margin: 40px 0 0; background: var(--line); border: 1px solid var(--line);
+    }
+    .proof article { background: var(--bg-2); padding: 22px 20px; }
+    .proof strong { display: block; color: var(--paper); font-size: 20px; }
+    .proof span { display: block; margin-top: 6px; color: var(--ink-dim); font-size: 13px; line-height: 1.5; }
+    .shot {
+      margin: 36px 0 0; border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+      background: #11151c;
+    }
+    .shot img { width: 100%; }
+    section { padding: 72px 0; }
+    .sec-kicker { color: var(--accent); font-size: 12px; letter-spacing: 0.16em; font-weight: 700; }
+    h2 { margin: 10px 0 0; font-size: clamp(28px, 4vw, 42px); color: var(--paper); letter-spacing: -0.03em; }
+    .bento {
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px; margin-top: 32px;
+    }
+    .card {
+      position: relative; overflow: hidden; min-height: 280px;
+      border: 1px solid var(--line); border-radius: 18px; background: #11151c;
+    }
+    .card img { width: 100%; height: 100%; object-fit: cover; }
+    .card .copy {
+      position: absolute; inset: auto 0 0; padding: 22px;
+      background: linear-gradient(180deg, transparent, rgba(5,6,7,0.92) 55%);
+    }
+    .card h3 { margin: 0; color: var(--paper); font-size: 22px; }
+    .card p { margin: 8px 0 0; color: var(--ink); font-size: 14px; line-height: 1.55; }
+    .stack { display: grid; gap: 16px; }
+    .list {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 28px;
+    }
+    .list article {
+      padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg-2);
+    }
+    .list h3 { margin: 0; color: var(--paper); font-size: 16px; }
+    .list p { margin: 8px 0 0; color: var(--ink-dim); font-size: 13px; line-height: 1.6; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 28px; }
+    .steps article { padding: 20px; border-top: 2px solid var(--accent); background: var(--bg-2); }
+    .steps em { color: var(--accent); font-style: normal; font-size: 12px; letter-spacing: 0.12em; }
+    .steps h3 { margin: 8px 0 0; color: var(--paper); font-size: 16px; }
+    .steps p { margin: 8px 0 0; color: var(--ink-dim); font-size: 13px; line-height: 1.55; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+    .split article { padding: 24px; border-radius: 16px; }
+    .open { background: color-mix(in srgb, var(--accent) 10%, var(--bg-2)); border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent); }
+    .closed { background: var(--bg-2); border: 1px solid var(--line); }
+    .split h3 { margin: 0 0 12px; color: var(--paper); }
+    .split li { margin: 0 0 8px; color: var(--ink-dim); font-size: 14px; }
+    footer { padding: 48px 0 64px; border-top: 1px solid var(--line); color: var(--ink-dim); font-size: 13px; }
+    footer strong { color: var(--paper); }
+    @media (max-width: 860px) {
+      nav { display: none; }
+      .proof, .bento, .list, .steps, .split { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="https://www.ybpbyxc.com">
+      <img src="./brand/logo-white.png" alt="云享传">
+      <b>靓仔</b>
+    </a>
+    <nav>
+      <a href="#capabilities">能力</a>
+      <a href="#workflow">工作流</a>
+      <a href="#open">开闭源</a>
+      <a href="https://github.com/18818474455/liangzai-cube-kit">cube-kit</a>
+    </nav>
+    <a class="cta" href="https://www.ybpbyxc.com/download.html">下载试用</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">活动摄影 · 桌面精修</p>
+        <h1>本机出片。<br>AI 起稿，参数你说了算。</h1>
+        <p class="lead">婚礼、活动、证件照现场用的修图美颜软件。像素留在电脑上，弱网也能出片。不是黑盒滤镜，每一项都能回退、微调、铺到整场。</p>
+        <div class="actions">
+          <a class="cta" href="https://www.ybpbyxc.com/download.html">下载 Mac / Windows</a>
+          <a class="cta cta-ghost" href="https://www.ybpbyxc.com/enterprise.html">私有化 / 二开</a>
+        </div>
+        <div class="proof">
+          <article><strong>像素不上云</strong><span>授权可以短时校验，图必须在本机算。</span></article>
+          <article><strong>AI 可改</strong><span>一键调色回填参数，不是烤死的 JPG。</span></article>
+          <article><strong>一场走完</strong><span>挑图、修、同步、导出、回传，一条工作台。</span></article>
+        </div>
+        <figure class="shot">
+          <img src="./hero-desktop.png" alt="云享传靓仔桌面工作台">
+        </figure>
+      </div>
+    </section>
+
+    <section id="capabilities">
+      <div class="wrap">
+        <p class="sec-kicker">先看效果</p>
+        <h2>四件事，决定现场能不能交片</h2>
+        <div class="bento">
+          <article class="card">
+            <img src="./features/color-before-after.gif" alt="智色前后对比">
+            <div class="copy">
+              <h3>PS 全参数色彩</h3>
+              <p>曝光到 HSL、曲线、分离调色。AI 给起点，味道你自己拧。</p>
+            </div>
+          </article>
+          <div class="stack">
+            <article class="card">
+              <img src="./features/portrait.jpg" alt="人像精修">
+              <div class="copy">
+                <h3>人像精修</h3>
+                <p>磨皮、修瑕、美型 19 路、瘦身。合影还能按人改。</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="./features/sky.jpg" alt="换天空">
+              <div class="copy">
+                <h3>换天 / 证件照</h3>
+                <p>天空预设、发丝抠图、纯色换背景。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="list">
+          <article>
+            <h3>AI 自动挑图</h3>
+            <p>闭眼、重样、糊图先打星旗色标，不删原图。不像的一键撤回。</p>
+          </article>
+          <article>
+            <h3>智能蒙版</h3>
+            <p>主体、天空、皮肤、嘴唇、虹膜；画笔和渐变也能上。</p>
+          </article>
+          <article>
+            <h3>LUT 色彩</h3>
+            <p>胶片和活动预设，强度可拖，人脸有保护。标准 .cube 可自带。</p>
+          </article>
+          <article>
+            <h3>色彩管理 · RAW</h3>
+            <p>ICC 进工作空间再出片。机内直出秒开，或走本机显影。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="wrap">
+        <p class="sec-kicker">一场图</p>
+        <h2>从导入到回传，不换软件</h2>
+        <div class="steps">
+          <article><em>01</em><h3>导入 / 云空间</h3><p>本地文件夹，或 App 相册下到本机。</p></article>
+          <article><em>02</em><h3>挑图 + AI 起稿</h3><p>打标，一键调色，参数还能改。</p></article>
+          <article><em>03</em><h3>精修</h3><p>人像、蒙版、换天、裁剪，跟手预览。</p></article>
+          <article><em>04</em><h3>同步导出</h3><p>铺整场、加水印、回传美颜无水印。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="open">
+      <div class="wrap">
+        <p class="sec-kicker">开闭源说清楚</p>
+        <h2>零件开源，引擎闭源</h2>
+        <div class="split">
+          <article class="open">
+            <h3>开源 MIT</h3>
+            <ul>
+              <li><a href="https://github.com/18818474455/liangzai-cube-kit">liangzai-cube-kit</a> · .cube 读写、三线性插值、教科书级曝光 / 色温</li>
+              <li><a href="https://github.com/18818474455/liangzai-plugin-sdk">liangzai-plugin-sdk</a> · 插件类型与 Hello。正式 App 不加载</li>
+            </ul>
+          </article>
+          <article class="closed">
+            <h3>闭源 · 商业授权</h3>
+            <ul>
+              <li>修图引擎、美颜美型、智能蒙版、换天、挑图、风格 LUT</li>
+              <li>工作空间配方。源码审计只在 NDA 后进行，不卖断核</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>微信 cylbaw</strong> · <a href="https://www.ybpbyxc.com">ybpbyxc.com</a> · 007007007@163.com</p>
+      <p>长沙粤北偏北传媒有限公司 · 介绍页 CC BY 4.0 · 不是全源码开源</p>
+    </div>
+  </footer>
+</body>
+</html>
