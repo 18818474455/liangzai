@@ -5,6 +5,8 @@
 
 [官网](https://www.ybpbyxc.com) · [下载试用](https://www.ybpbyxc.com/download.html) · [私有化 / 二开](https://www.ybpbyxc.com/enterprise.html)
 
+![云享传靓仔桌面工作台](docs/hero-desktop.png)
+
 ---
 
 ## 1. 产品是什么
@@ -34,11 +36,13 @@ flowchart LR
 | 段 | 开源还是闭源 | 对应仓库 |
 |----|----------------|----------|
 | `.cube` 读写、三线性插值 | 开源 MIT | [liangzai-cube-kit](https://github.com/18818474455/liangzai-cube-kit) |
-| 教科书级曝光 / 色温 | 开源 MIT | 同上 |
+| 教科书级曝光 / 色温 | 开源 MIT | 同上，见 [`src/basic-color.ts`](https://github.com/18818474455/liangzai-cube-kit/blob/main/src/basic-color.ts) 的 `applyExposure` / `applyColorTemperature` |
 | 插件类型 / Hello 示例 | 开源 MIT | [liangzai-plugin-sdk](https://github.com/18818474455/liangzai-plugin-sdk) |
 | 颜色管理边界、工作空间、风格 LUT | 闭源 | 正式 App |
 | 美颜 / 瘦脸模型与调参 | 闭源 | 正式 App |
 | 修图引擎内核 | 闭源 | 正式 App |
+
+教科书级曝光 / 色温已经在 cube-kit 里，不是另开的 color 库。产品 RAW 白平衡、内部工作空间仍闭源。
 
 ---
 
@@ -60,9 +64,10 @@ flowchart LR
 
 | 组件 | 关键词 | 能跑什么 |
 |------|--------|----------|
-| [liangzai-cube-kit](https://github.com/18818474455/liangzai-cube-kit) | `.cube LUT`、`3D LUT 颜色查找表`、`三线性插值`、`批量套 LUT` | `npm i liangzai-cube-kit`，[在线试跑](https://18818474455.github.io/liangzai-cube-kit/) |
+| [liangzai-cube-kit](https://github.com/18818474455/liangzai-cube-kit) | `.cube LUT`、`3D LUT`、`三线性插值`、`批量套 LUT`、教科书级曝光 / 色温 | `npm i liangzai-cube-kit`；LUT 见 `src/cube.ts`，曝光 / 色温见 `src/basic-color.ts`；[在线试跑](https://18818474455.github.io/liangzai-cube-kit/) |
 | [liangzai-plugin-sdk](https://github.com/18818474455/liangzai-plugin-sdk) | 插件类型、工作流约定 | `npm start` 跑 Hello；正式 App 不加载 |
-| color 颜色科学库 | `白平衡算法`、`色温算法` | 规划中，标准公式，不拆产品 RAW 白平衡 |
+
+没有第三个「color 颜色科学库」仓库。色温 / 曝光的开源实现就在 cube-kit，不要按「规划中」去找。
 
 开源的永远是通用标准技术；闭源的永远是独有资产。两者不冲突。
 
@@ -70,10 +75,10 @@ flowchart LR
 
 ## 5. 开闭源声明
 
-| 开源（MIT） | 闭源（商业授权） |
+| 开源（零件仓 MIT） | 闭源（商业授权） |
 |---|---|
-| `.cube` LUT 读写工具（cube-kit） | 修图引擎内核 |
-| 教科书级曝光 / 色温 / 插值 | AI 模型（美颜 / 瘦脸 / 风格迁移） |
+| `.cube` LUT 读写 + 三线性插值（cube-kit） | 修图引擎内核 |
+| 教科书级曝光 / 色温（cube-kit `basic-color.ts`） | AI 模型（美颜 / 瘦脸 / 风格迁移） |
 | 插件 SDK / 公开类型 | 产品风格 LUT / 调色配方 |
 | 通用算法思路（插值 / 滤波 / 形变） | 正式 App |
 
@@ -92,3 +97,7 @@ flowchart LR
 | 商务邮箱 | 007007007@163.com |
 | 协议反馈 | xiaopangnanhai@qq.com |
 | 公司 | 长沙粤北偏北传媒有限公司 |
+
+---
+
+本仓库文档使用 [CC BY 4.0](./LICENSE)。开源零件仓仍是 MIT。
