@@ -174,11 +174,35 @@ npm start
 > [!NOTE]
 > 主页中的「AI工具箱」「选片交付」仍是规划入口，本 README 不把它们作为当前正式能力宣传。Mac Intel x64 也不是当前公证 GA 目标。
 
-## 下载、合作与许可
+## 联系、下载与许可
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="./docs/readme/media/wechat-qr.png?raw=1">
+        <img src="./docs/readme/media/wechat-qr.png" alt="微信二维码：陈影留白" width="320">
+      </a>
+      <br><br>
+      <b>微信 · 陈影留白</b>
+      <br>
+      <sub>扫码添加为好友</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/18818474455/liangzai">
+        <img src="./docs/readme/media/download-qr.png" alt="云享传靓仔 Mac 和 Windows 下载入口二维码" width="320">
+      </a>
+      <br><br>
+      <b>Mac / Windows 下载入口</b>
+      <br>
+      <sub>扫码进入产品页，首屏提供当前正式安装包</sub>
+    </td>
+  </tr>
+</table>
 
 - 产品与官网：[ybpbyxc.com](https://www.ybpbyxc.com)
 - 企业私有化 / OEM / 二次开发：[企业合作](https://www.ybpbyxc.com/enterprise.html)
-- 微信：`cylbaw`
+- WhatsApp：`@biandongdev`
+- 微信：`cylbaw` · 或扫描上方二维码添加「陈影留白」
 - 商务邮箱：`007007007@163.com`
 - 协议反馈：`xiaopangnanhai@qq.com`
 - 公司：长沙粤北偏北传媒有限公司

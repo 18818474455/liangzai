@@ -21,8 +21,10 @@ docs/readme/
 │   ├── product-tour-poster.webp
 │   └── social-preview.png
 └── media/
+    ├── download-qr.png
     ├── product-tour-720p.mp4
-    └── product-tour-frame.jpg
+    ├── product-tour-frame.jpg
+    └── wechat-qr.png
 ```
 
 ## 重新渲染
@@ -38,6 +40,11 @@ python3 docs/readme/source/render_v0.py
 ## 视频
 
 原始录屏不进入仓库。仓内版本为 H.264、1280×720、24 fps、4,031,424 bytes，并带 `faststart`，通过 README 海报链接访问。GitHub README 不可靠支持仓内 MP4 内嵌播放器，因此不使用 `<video>` 标签。
+
+## 联系二维码
+
+- `wechat-qr.png`：从用户提供的微信名片中保留静区裁切，避免在 README 中展示无关留白。
+- `download-qr.png`：指向 `https://github.com/18818474455/liangzai`。当前官网 `download.html` 的 Mac 链接仍是旧版，因此先让扫码用户进入包含当前正式安装包链接的产品总览页。
 
 ## 发布门禁
 

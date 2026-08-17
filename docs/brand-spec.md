@@ -48,5 +48,6 @@
 - 技术图：`local-first-architecture.webp`、`editable-ai-pipeline.webp`、`multi-model-orchestration.webp`、`open-core-map.webp`
 - 实机证据：`portrait-proof.webp`、`mask-proof.webp`、`image-tools-proof.webp`
 - 完整录屏：`docs/readme/media/product-tour-720p.mp4`，README 通过 `product-tour-poster.webp` 链接
+- 联系与下载：`docs/readme/media/wechat-qr.png`、`download-qr.png`
 - 社交封面：`social-preview.png`（需在 GitHub Settings 手动设置）
 - 需求与技术方案：`docs/README-专业化重设计-需求与技术方案.md`
