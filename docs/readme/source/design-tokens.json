@@ -1,0 +1,35 @@
+{
+  "canvas": {
+    "default": [1600, 900],
+    "socialPreview": [1280, 640],
+    "grid": 8
+  },
+  "color": {
+    "white": "#FFFFFF",
+    "ink": "#1D1D1F",
+    "muted": "#86868B",
+    "surface": "#F5F5F7",
+    "hairline": "#D2D2D7",
+    "mint": "#3DD6A5",
+    "mintDark": "#167C62",
+    "cyan": "#5DDCF6"
+  },
+  "radius": {
+    "control": 12,
+    "panel": 18,
+    "hero": 22
+  },
+  "type": {
+    "display": "SF Pro / STHeiti",
+    "body": "Hiragino Sans GB",
+    "mono": "SF Mono",
+    "minimumDiagramTextPx": 28
+  },
+  "principles": [
+    "Use real product screenshots only",
+    "One primary accent color",
+    "Keep product claims outside images too",
+    "Do not expose model weights, recipes, or engine internals",
+    "Keep every diagram readable at mobile width"
+  ]
+}
