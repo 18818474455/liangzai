@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用交流与问答
+    url: https://github.com/18818474455/liangzai/discussions
+    about: 不确定是否为 Bug 时，请先在 Discussions 交流。
+  - name: 安全与隐私报告
+    url: https://github.com/18818474455/liangzai/security/policy
+    about: 请勿公开安全漏洞、授权信息或私人数据。
+  - name: 企业合作
+    url: https://www.ybpbyxc.com/enterprise.html
+    about: 私有化、OEM 与二次开发合作。

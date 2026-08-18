@@ -3,6 +3,24 @@
 </p>
 
 <p align="center">
+  <a href="./README.md"><b>简体中文</b></a>
+  &nbsp;·&nbsp;
+  <a href="./README_EN.md">English</a>
+  &nbsp;·&nbsp;
+  <a href="./CHANGELOG.md">更新记录</a>
+  &nbsp;·&nbsp;
+  <a href="./ROADMAP.md">公开路线图</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/18818474455/liangzai/releases"><img src="https://img.shields.io/github/v/release/18818474455/liangzai?display_name=tag&style=flat-square" alt="GitHub release"></a>
+  <a href="https://github.com/18818474455/liangzai/actions/workflows/docs.yml"><img src="https://github.com/18818474455/liangzai/actions/workflows/docs.yml/badge.svg" alt="Documentation checks"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/docs-CC_BY_4.0-2ed8a7?style=flat-square" alt="Documentation license: CC BY 4.0"></a>
+  <img src="https://img.shields.io/badge/macOS-Apple_Silicon-111827?style=flat-square&logo=apple" alt="macOS Apple Silicon">
+  <img src="https://img.shields.io/badge/Windows-x64-111827?style=flat-square&logo=windows11" alt="Windows x64">
+</p>
+
+<p align="center">
   <a href="https://oss.ybpbyxc.com/uploads/2026-08-17/chroma-studio-0.1.19-build27-arm64.dmg"><b>Mac · Apple Silicon</b></a>
   &nbsp;·&nbsp;
   <a href="https://oss.ybpbyxc.com/uploads/2026-08-15/chroma-studio-0.1.19-build26-x64.exe"><b>Windows · x64</b></a>
@@ -20,6 +38,18 @@
 
 > [!IMPORTANT]
 > `liangzai` 是云享传靓仔的产品技术总览与开源导航，不是完整桌面应用源码。可运行的通用组件采用 MIT；本仓文档与技术图采用 CC BY 4.0；正式修图引擎、模型与风格配方属于商业产品。
+
+## 先看效果，再决定
+
+<p align="center">
+  <img src="./assets/feature-tour.gif" alt="云享传靓仔活动摄影修图工作台功能速览">
+</p>
+
+| 直接使用 | 开发者试跑 | 参与项目 |
+|:---|:---|:---|
+| [下载 Mac 正式版](https://oss.ybpbyxc.com/uploads/2026-08-17/chroma-studio-0.1.19-build27-arm64.dmg) · [下载 Windows 正式版](https://oss.ybpbyxc.com/uploads/2026-08-15/chroma-studio-0.1.19-build26-x64.exe) | [在线体验 `.cube` LUT 引擎](https://18818474455.github.io/liangzai-cube-kit/) · [`npm` 安装](https://www.npmjs.com/package/liangzai-cube-kit) | [讨论与问答](https://github.com/18818474455/liangzai/discussions) · [提交建议](https://github.com/18818474455/liangzai/issues/new/choose) |
+
+如果你关心本地优先的活动摄影工作流、可编辑 AI 修图，或者希望跟进开源 LUT / 插件工具，欢迎 **Star**；版本发布、公开测试与可贡献任务会持续记录在本仓库，不用靠营销群获取更新。
 
 ## 四分钟，看完整精修过程
 
@@ -173,6 +203,17 @@ npm start
 
 > [!NOTE]
 > 主页中的「AI工具箱」「选片交付」仍是规划入口，本 README 不把它们作为当前正式能力宣传。Mac Intel x64 也不是当前公证 GA 目标。
+
+## 参与与关注
+
+这个总览仓接受产品体验反馈、兼容性报告、文档修正和公开组件建议。开始前请阅读 [贡献指南](./CONTRIBUTING.md) 与 [公开路线图](./ROADMAP.md)。
+
+- 遇到可复现问题：[提交 Bug](https://github.com/18818474455/liangzai/issues/new?template=bug_report.yml)
+- 有真实工作流需求：[提交功能建议](https://github.com/18818474455/liangzai/issues/new?template=feature_request.yml)
+- 想先交流使用方式：[进入 Discussions](https://github.com/18818474455/liangzai/discussions)
+- 发现安全或隐私问题：请按 [安全策略](./SECURITY.md) 私下报告，不要公开图片、账号或授权信息
+
+`good first issue` 会优先选择文档、示例和开放组件范围内可独立完成的任务。正式桌面引擎、模型和风格配方不通过 Pull Request 开放。
 
 ## 联系、下载与许可
 
