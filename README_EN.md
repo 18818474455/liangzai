@@ -80,14 +80,13 @@ Public manifest and host types with a runnable Hello example. It documents an in
 
 ### Single-feature algorithm experiments · MIT
 
-These four repositories are early, standalone prototypes for learning and experimentation. They are **not extracted source code from the production retouching engine**, and their quality, robustness, and performance do not represent the shipping Liangzai product.
+These three repositories are early, standalone prototypes for learning and experimentation. They are **not extracted source code from the production retouching engine**, and their quality, robustness, and performance do not represent the shipping Liangzai product.
 
 | Repository | What it demonstrates | Demo |
 |:---|:---|:---|
 | [Face Blemish Remover](https://github.com/18818474455/face-blemish-remover) | C++ frequency-separation and local-statistics repair with Android/iOS integration examples | Native source |
 | [Face Age & Gender Estimation](https://github.com/18818474455/face-age-gender-estimation) | face-api.js face detection and appearance-based age/gender estimates | [GitHub Pages](https://18818474455.github.io/face-age-gender-estimation/) |
 | [Body Slimming Demo](https://github.com/18818474455/body-slimming-demo) | BodyPix segmentation and Canvas displacement-field reshaping | [GitHub Pages](https://18818474455.github.io/body-slimming-demo/) |
-| [Human Skin-tone Pixel Detection](https://github.com/18818474455/human-skin-tone-detection) | BodyPix-constrained skin-color pixel filtering and local enhancement | [GitHub Pages](https://18818474455.github.io/human-skin-tone-detection/) |
 
 The repositories document privacy, bias, and safety boundaries for appearance-based estimates. None of these demos should be used for identity claims or high-risk decisions.
 

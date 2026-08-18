@@ -181,16 +181,15 @@ npm start
 
 ### 单功能算法实验 · MIT
 
-下面四个仓库来自早期单功能原型，适合学习、修改和验证思路。它们**不是正式版商业引擎的拆分源码**，效果、鲁棒性与性能也不代表云享传靓仔正式版。
+下面三个仓库来自早期单功能原型，适合学习、修改和验证思路。它们**不是正式版商业引擎的拆分源码**，效果、鲁棒性与性能也不代表云享传靓仔正式版。
 
 | 实验仓库 | 主要内容 | 在线体验 |
 |:---|:---|:---|
 | [Face Blemish Remover](https://github.com/18818474455/face-blemish-remover) | C++ 频率分离与局部统计瑕疵修复，含 Android/iOS 集成示例 | 原生源码 |
 | [Face Age & Gender Estimation](https://github.com/18818474455/face-age-gender-estimation) | face-api.js 人脸、年龄与外观二分类估计 | [GitHub Pages](https://18818474455.github.io/face-age-gender-estimation/) |
 | [Body Slimming Demo](https://github.com/18818474455/body-slimming-demo) | BodyPix 人体分割与 Canvas 位移场体型调整 | [GitHub Pages](https://18818474455.github.io/body-slimming-demo/) |
-| [Human Skin-tone Pixel Detection](https://github.com/18818474455/human-skin-tone-detection) | BodyPix 约束下的皮肤颜色像素筛选与局部提亮实验 | [GitHub Pages](https://18818474455.github.io/human-skin-tone-detection/) |
 
-涉及年龄、性别外观和肤色像素的结果均为实验性估计；各仓 README 明确列出了偏差、隐私和禁止用于高风险决策的边界。
+涉及年龄和性别外观的结果均为实验性估计；各仓 README 明确列出了偏差、隐私和禁止用于高风险决策的边界。
 
 ## 正式交付与可复核证据
 
